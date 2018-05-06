@@ -1,0 +1,2 @@
+FROM debian:testing
+RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y xorg libgomp1 bsdtar less nano binutils libasound2

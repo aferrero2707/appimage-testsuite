@@ -1,0 +1,2 @@
+FROM debian:stable
+RUN apt-get update && apt-get install -y xorg libgomp1 bsdtar less nano binutils libasound2
