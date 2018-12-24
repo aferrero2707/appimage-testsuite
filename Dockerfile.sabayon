@@ -1,0 +1,3 @@
+FROM photoflow/aitest-sabayon
+
+RUN equo install sys-apps/dbus

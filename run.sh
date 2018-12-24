@@ -17,7 +17,8 @@ else
 	image=$distro
 fi
 
-docker run --rm -it -e DISPLAY=${IP}:0 -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd):/aitest -v "$ai":/AppImage --cap-add=SYS_PTRACE --security-opt seccomp:unconfined ${image} bash
+chmod u+x "$ai"
+docker run --rm -it -e DISPLAY=${IP}:0 -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd):/aitest -v "$ai":/AppImage -v "$HOME":/shared --cap-add=SYS_PTRACE --security-opt seccomp:unconfined ${image} bash
 
 exit 0
 

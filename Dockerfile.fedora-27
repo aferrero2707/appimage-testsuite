@@ -1,2 +1,3 @@
 FROM fedora:27
 RUN yum update -y && yum -y install xorg-x11-server-Xorg bsdtar fontconfig binutils findutils mesa-libEGL.x86_64 libSM.x86_64
+RUN dbus-uuidgen > /etc/machine-id

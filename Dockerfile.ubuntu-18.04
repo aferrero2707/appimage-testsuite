@@ -1,2 +1,3 @@
 FROM ubuntu:18.04
-RUN apt-get update && apt-get install -y software-properties-common libx11-6 libegl1-mesa libgl1-mesa-glx expat strace bsdtar binutils fontconfig libsm6 libgomp1 valgrind gdb nano kcachegrind
+RUN apt-get update && apt-get install -y software-properties-common libx11-6 libegl1-mesa libgl1-mesa-glx expat strace bsdtar binutils fontconfig libsm6 libgomp1 valgrind gdb nano kcachegrind dbus curl desktop-file-utils
+RUN dbus-uuidgen > /etc/machine-id
