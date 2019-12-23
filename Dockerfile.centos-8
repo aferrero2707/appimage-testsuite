@@ -1,0 +1,2 @@
+FROM centos:centos8
+RUN yum update -y && yum -y install wget xorg-x11-server-Xorg fontconfig binutils findutils mesa-libEGL.x86_64 libSM.x86_64 libXinerama libXrandr libXcursor libXcomposite
