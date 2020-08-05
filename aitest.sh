@@ -10,4 +10,4 @@ export APPIMAGE=/AppImage
 export APPDIR=/AppDir/squashfs-root
 export OWD=$(pwd)
 
-exec "$APPDIR"/AppRun
+exec "$APPDIR"/AppRun $@
